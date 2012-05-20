@@ -1,0 +1,105 @@
+<?php
+echo $this->doctype();
+?>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <?php
+        $this->loadSkin($this->skin);
+        echo $this->headTitle();
+        echo $this->headScript();
+        // add a link to the site style sheet
+        $this->headLink()->appendStylesheet('/css/layout.css');
+        echo $this->headLink();
+        ?>
+    </head>
+    <body>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">Zend CMS</a>
+          <div class="btn-group pull-right">
+            <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+              <i class="icon-user"></i> Username
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Profile</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Sign Out</a></li>
+            </ul>
+          </div>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><?php echo $this->layout()->nav; ?>&nbsp;</li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3">
+          <div class="well sidebar-nav">
+            <ul class="nav nav-list">
+              <li class="nav-header">SubNav</li>
+              <li class="active"><a href="#">Link</a></li>
+              <li><?php echo $this->layout()->subNav; ?>&nbsp;</li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li class="nav-header">AdminMenu</li>
+              <li><?php echo $this->layout()->adminMenu; ?>&nbsp;</li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li class="nav-header">UserForm</li>
+              <li><?php echo $this->layout()->userForm; ?>&nbsp;</li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+            </ul>
+          </div><!--/.well -->
+        </div><!--/span-->
+        <div class="span9">
+          <div class="span9">
+            <p><?php echo $this->layout()->content ?>&nbsp;</p>
+          </div>
+          <div class="row-fluid">
+            <div class="span4">
+              <h2>SubNav</h2>
+              <p><?php echo $this->layout()->subNav; ?>&nbsp;</p>
+              <p><a class="btn" href="#">View details &raquo;</a></p>
+            </div><!--/span-->
+            <div class="span4">
+              <h2>AdminMenu</h2>
+              <p><?php echo $this->layout()->adminMenu; ?>&nbsp;</p>
+              <p><a class="btn" href="#">View details &raquo;</a></p>
+            </div><!--/span-->
+            <div class="span4">
+              <h2>UserForm</h2>
+              <p><?php echo $this->layout()->userForm; ?>&nbsp;</p>
+              <p><a class="btn" href="#">View details &raquo;</a></p>
+            </div><!--/span-->
+          </div><!--/row-->
+        </div><!--/span-->
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <p>&copy; Company 2012</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+    </body>
+
+</html>
