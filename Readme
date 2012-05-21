@@ -1,6 +1,26 @@
 This Repository include files for create CMS (Very simple) on base Zend Framework. 
 For layout style we will use Bootstrap Twiter. 
+================================================================================
+
+Head idea from book: 
+Pro Zend Framework Techniques: Build a Full CMS Project
+Copyright © 2009 by Forrest Lyman
+
+                                    * * *
+
 
 I will add more info on my Blog 
+INGRIDIENTS:
 
-Continue comming soon...
+# Design
+Bootstrap, from Twitter http://twitter.github.com/bootstrap/
+
+# Engine for CMS
+Zend Framework http://framework.zend.com/
+
+
+                                    * * *
+Any questions about this CMS you can send to my Blog http://akajedi.blogspot.com/
+
+
+P.S.: Continue comming soon...
