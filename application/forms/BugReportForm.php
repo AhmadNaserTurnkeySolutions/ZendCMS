@@ -50,6 +50,9 @@ class Form_BugReportForm extends Zend_Form
         $description->setAttrib('cols',50);
         $description->setAttrib('rows',4);
         $this->addElement($description);
+        
+        $id = $this->createElement('hidden', 'id');
+        $this->addElement($id);
 
         $priority = $this->createElement('select', 'priority');
         $priority->setLabel('Issue priority:');
