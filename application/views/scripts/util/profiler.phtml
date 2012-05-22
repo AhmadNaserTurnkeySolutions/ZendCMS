@@ -8,6 +8,7 @@ if ($profiler->getEnabled() && $profiler->getTotalNumQueries() > 0) {
         <h2>Database Profiling Report</h2>
         <p>Total queries executed: <?php echo $profiler->getTotalNumQueries() ?></p>
         <p>Total elapsed time: <?php echo $profiler->getTotalElapsedSecs() ?></p>
+         <p>getEnabled: <?php echo $profiler->getEnabled() ?></p>
     </div>
     <table class='table'>
         <thead>

@@ -11,8 +11,7 @@ if ($this->pageCount) {
         <ul>
         <!-- Previous page link -->
            <?php if (isset($this->previous)) { ?>
-            <li><a href="<?php echo $this->url(array_merge(
-                               $params, array('page' => $this->previous)));
+            <li><a href="<?php echo $this->url(array_merge($params, array('page' => $this->previous)));
                ?>">
                 &lt; Previous
             </a></li>
@@ -32,8 +31,7 @@ if ($this->pageCount) {
         } ?>
         <!-- Next page link -->
     <?php if (isset($this->next)) { ?>
-        <li><a href="<?php echo $this->url(
-                array_merge($params, array('page' => $this->next)));
+        <li><a href="<?php echo $this->url(array_merge($params, array('page' => $this->next)));
         ?>">
                 Next &gt;
             </a></li>
